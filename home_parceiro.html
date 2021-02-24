@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <script src="functions.js"></script>
+  <title>Home</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="carrossel" style="margin-left: 0; margin-right: 90px;">
+      <div>
+        <img class="animetad fadeInTopLeft visible" src="assets/img1.svg" alt="img1" id="img1" />
+      </div>
+      <div>
+        <img class="invisible animetad fadeInBottomRight" src="assets/img2.svg" alt="mg2" id="img2" />
+      </div>
+    </div>
+
+    <div id="card">
+      <div id="header">
+        <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+          <div>
+            <img src="assets/logo.svg" alt="logo">
+          </div>
+          <div>
+            <a href="index.html" class="text-ligth">Sair</a>
+          </div>
+        </div>
+        <div id="title">
+          Parceiro
+        </div>
+        <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+          <div id="title-marca">
+            Coursify.Me Enterprise
+          </div>
+          <div class="disable" id="bag">
+            <i class="fas fa-shopping-bag" style="color: #1abc9c; font-size: 36px;">
+              <sup style="font-size: 20px;" id="item"></sup>
+            </i>
+          </div>
+        </div>
+      </div>
+      <div id="form">
+
+        <div id="inputs-login" class="animetad">
+          <div id="form">
+            <input type="text" name="" id="cpf" placeholder="Informe o CPF do cliente" maxlength="11" />
+            <div id="button-login">
+              <input type="button" name="" onclick="validar()" value="Validar">
+            </div>
+          </div>
+        </div>
+
+        <div id="inputs-cadastro" class="disable animetad">
+          <div id="form">
+            <input type="text" name="" id="nome_produto" placeholder="Nome do Produto" />
+            <input type="" name="" id="valor" placeholder="Valor" />
+
+            <div id="button-login">
+              <input type="button" name="" value="Adicionar" onclick="addItem()">
+              <div style="margin: 0 20px;"></div>
+              <input type="button" name="" value="Finalizar" style="color: #1abc9c; background-color: transparent; border: 1px solid #1abc9c;">
+            </div>
+            <a href="home_parceiro.html" class="text-ligth" style="text-align: center; margin-top: 30px;">Voltar</a>
+          </div>
+        </div>
+
+      </div>
+      <div id="footer-card">
+        2020 © Davi Cruz. Todos os direitos reservados
+      </div>
+    </div>
+</body>
+
+</html>
